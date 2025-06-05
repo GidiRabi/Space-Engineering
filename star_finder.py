@@ -36,17 +36,18 @@ class star_finder:
     def get_threshold(self):
         blurred = GaussianBlur(self.gray_image, (5, 5), 0)
         _, thresh = threshold(blurred, self.sensitivity, 255, THRESH_TOZERO)
-        adaptive = adaptiveThreshold(thresh, 255, ADAPTIVE_THRESH_MEAN_C,
-                                     THRESH_BINARY_INV, blockSize=3, C=3.5)
+        adaptive = adaptiveThreshold(thresh, 255, ADAPTIVE_THRESH_MEAN_C, THRESH_BINARY_INV, blockSize=11, C=3)
         return adaptive
 
     def find_stars(self):
         contours, _ = findContours(self.mask, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE)
         stars = []
         for cnt in contours:
-            (x, y), r = cv2.minEnclosingCircle(cnt)
-            if r > 10:
+            area = cv2.contourArea(cnt)
+            if area < 5 or area > 150:
                 continue
+            (x, y), r = cv2.minEnclosingCircle(cnt)
+
             x, y, r = int(x), int(y), int(r) + 1
             center = (x, y)
             star_crop = self.extract_star(y, x, r)
@@ -72,3 +73,4 @@ class star_finder:
     def get_data(self):
         for i, (img, center, r, b) in enumerate(self.stars[:self.N_stars]):
             print(f"Star {i}: center={center}, radius={r}, brightness={b}")
+ 

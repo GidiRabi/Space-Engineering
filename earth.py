@@ -31,13 +31,11 @@ class earth:
         self.curve = self.get_curve()
         self.is_dark_earth = False if self.is_earth else self._is_earth_at_night()
         self.is_stars = not self.is_earth and not self.is_dark_earth
-        self.mask = None
 
     def _is_earth_at_night(self):
         gray = GaussianBlur(self.gray_image, (3, 3), 0)
         _, gray = threshold(gray, 80, 255, THRESH_TOZERO)
-        mask = adaptiveThreshold(gray, 255, ADAPTIVE_THRESH_MEAN_C,
-                                 THRESH_BINARY_INV, 3, 5)
+        mask = adaptiveThreshold(gray, 255, ADAPTIVE_THRESH_MEAN_C, THRESH_BINARY_INV, 11, 3)
         mask = morphologyEx(mask, MORPH_CLOSE, np.ones((5, 5), np.uint8))
         contours, _ = findContours(mask, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE)
         self.mask = mask
@@ -80,7 +78,7 @@ class earth:
         self.draw_black_cir(self._get_cir_contours())
         self.mask = dilate(self.mask, np.ones((5, 5), np.uint8), iterations=3)
         self.fill_earth()
-        self.mask = dilate(self.mask, np.ones((15, 15), np.uint8), iterations=1)
+        self.mask = dilate(self.mask, np.ones((10, 10), np.uint8), iterations=1)
 
         clear_earth = bitwise_and(self.image, self.image, mask=self.mask)
         clear_sky = bitwise_and(self.image, self.image, mask=bitwise_not(self.mask))
