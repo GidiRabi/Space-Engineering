@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 import os
+import re
 from earth import earth
 from star_finder import star_finder
 
@@ -93,10 +94,15 @@ def detect_flicker(image_gray, flicker_threshold=12, row_brightness_variation=10
 
     return passed, " | ".join(tags)
 
-def run_phase1_on_folder(folder_path='images'):
+def natural_key(string):
+    # Split string into list of strings and integers: "10.jpg" -> ["", 10, ".jpg"]
+    return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', string)]
+
+def run_phase1_on_folder(folder_path='stars'):
     results = []
 
-    for filename in os.listdir(folder_path):
+    # Natural sort the filenames
+    for filename in sorted(os.listdir(folder_path), key=natural_key):
         if not is_image_file(filename):
             continue
 
@@ -154,4 +160,8 @@ def run_phase1_on_folder(folder_path='images'):
     return results
 
 if __name__ == '__main__':
-    run_phase1_on_folder('images')
+    from contextlib import redirect_stdout
+
+    output_path = "Output.txt"
+    with open(output_path, "w") as f, redirect_stdout(f):
+        run_phase1_on_folder('stars')

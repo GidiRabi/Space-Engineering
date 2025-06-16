@@ -1,0 +1,6 @@
+import kagglehub
+
+# Download latest version
+path = kagglehub.dataset_download("abhikalpsrivastava15/space-images-category")
+
+print("Path to dataset files:", path)

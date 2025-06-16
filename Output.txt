@@ -1,0 +1,1941 @@
+1.jpg: ERROR – Could not read image
+
+2.jpg: ✅ PASSED
+  - Image sharpness: 851.0
+  - → Sharp
+  - Noise level: 6.6
+  - → Clean
+  - Star count: 325
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.82 | Flicker – brightness row variation: 3.66
+
+3.jpg: ❌ REJECTED
+  - Image sharpness: 144.4
+  - → Blurry
+  - Noise level: 3.0
+  - → Clean
+  - Star count: 99
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.51 | Flicker – brightness row variation: 0.65
+
+4.jpg: ✅ PASSED
+  - Image sharpness: 611.2
+  - → Sharp
+  - Noise level: 5.5
+  - → Clean
+  - Star count: 501
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.91 | Flicker – brightness row variation: 16.37 | → Moderate flicker
+
+5.jpg: ✅ PASSED
+  - Image sharpness: 1803.4
+  - → Sharp
+  - Noise level: 12.0
+  - → Clean
+  - Star count: 191
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.04 | Flicker – brightness row variation: 9.23
+
+6.jpg: ✅ PASSED
+  - Image sharpness: 406.4
+  - → Sharp
+  - Noise level: 4.9
+  - → Clean
+  - Star count: 162
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.54 | Flicker – brightness row variation: 13.1
+
+7.jpg: ✅ PASSED
+  - Image sharpness: 877.1
+  - → Sharp
+  - Noise level: 7.6
+  - → Clean
+  - Star count: 195
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.91 | Flicker – brightness row variation: 9.21
+
+8.jpg: ✅ PASSED
+  - Image sharpness: 1654.7
+  - → Sharp
+  - Noise level: 9.4
+  - → Clean
+  - Star count: 205
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.31 | Flicker – brightness row variation: 1.13
+
+9.jpg: ❌ REJECTED
+  - Image sharpness: 3501.2
+  - → Sharp
+  - Noise level: 16.3
+  - → Noisy
+  - Star count: 36
+  - → Low star count
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.97 | Flicker – brightness row variation: 14.36
+
+10.jpg: ✅ PASSED
+  - Image sharpness: 1911.2
+  - → Sharp
+  - Noise level: 12.2
+  - → Clean
+  - Star count: 230
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.44 | Flicker – brightness row variation: 4.64
+
+11.jpg: ❌ REJECTED
+  - Image sharpness: 1883.8
+  - → Sharp
+  - Noise level: 11.3
+  - → Clean
+  - Star count: 214
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.4 | Flicker – brightness row variation: 37.35 | → Moderate flicker | → Severe flicker
+
+12.jpg: ❌ REJECTED
+  - Image sharpness: 77.2
+  - → Blurry
+  - Noise level: 1.8
+  - → Clean
+  - Star count: 181
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.35 | Flicker – brightness row variation: 13.81
+
+13.jpg: ❌ REJECTED
+  - Image sharpness: 203.3
+  - → Blurry
+  - Noise level: 3.0
+  - → Clean
+  - Star count: 216
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.2 | Flicker – brightness row variation: 3.4
+
+14.jpg: ❌ REJECTED
+  - Image sharpness: 746.3
+  - → Sharp
+  - Noise level: 7.3
+  - → Clean
+  - Star count: 532
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.91 | Flicker – brightness row variation: 35.51 | → Moderate flicker | → Severe flicker
+
+15.jpg: ❌ REJECTED
+  - Image sharpness: 85.1
+  - → Blurry
+  - Noise level: 2.4
+  - → Clean
+  - Star count: 1734
+  - → Sufficient stars
+  - → Warning: Excessive stars (possible noise)
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.0 | Flicker – brightness row variation: 18.37 | → Moderate flicker
+
+16.jpg: ❌ REJECTED
+  - Image sharpness: 161.2
+  - → Blurry
+  - Noise level: 3.6
+  - → Clean
+  - Star count: 36
+  - → Low star count
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.21 | Flicker – brightness row variation: 38.16 | → Moderate flicker | → Severe flicker
+
+17.jpg: ❌ REJECTED
+  - Image sharpness: 131.9
+  - → Blurry
+  - Noise level: 2.8
+  - → Clean
+  - Star count: 572
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.18 | Flicker – brightness row variation: 15.79 | → Moderate flicker
+
+18.jpg: ✅ PASSED
+  - Image sharpness: 595.1
+  - → Sharp
+  - Noise level: 6.3
+  - → Clean
+  - Star count: 666
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.58 | Flicker – brightness row variation: 12.45
+
+19.jpg: ✅ PASSED
+  - Image sharpness: 753.6
+  - → Sharp
+  - Noise level: 7.3
+  - → Clean
+  - Star count: 796
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.08 | Flicker – brightness row variation: 13.02
+
+20.jpg: ❌ REJECTED
+  - Image sharpness: 72.8
+  - → Blurry
+  - Noise level: 2.5
+  - → Clean
+  - Star count: 74
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.46 | Flicker – brightness row variation: 1.59
+
+21.jpg: ✅ PASSED
+  - Image sharpness: 927.2
+  - → Sharp
+  - Noise level: 8.0
+  - → Clean
+  - Star count: 865
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.88 | Flicker – brightness row variation: 12.33
+
+22.jpg: ❌ REJECTED
+  - Image sharpness: 152.3
+  - → Blurry
+  - Noise level: 3.7
+  - → Clean
+  - Star count: 83
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.53 | Flicker – brightness row variation: 9.23
+
+23.jpg: ✅ PASSED
+  - Image sharpness: 672.6
+  - → Sharp
+  - Noise level: 7.0
+  - → Clean
+  - Star count: 294
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.08 | Flicker – brightness row variation: 15.45 | → Moderate flicker
+
+24.jpg: ✅ PASSED
+  - Image sharpness: 425.3
+  - → Sharp
+  - Noise level: 5.9
+  - → Clean
+  - Star count: 198
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.34 | Flicker – brightness row variation: 10.37
+
+25.jpg: ❌ REJECTED
+  - Image sharpness: 2.4
+  - → Blurry
+  - Noise level: 0.3
+  - → Clean
+  - Star count: 237
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.42 | Flicker – brightness row variation: 15.81 | → Moderate flicker
+
+26.jpg: ❌ REJECTED
+  - Image sharpness: 28.0
+  - → Blurry
+  - Noise level: 1.2
+  - → Clean
+  - Star count: 6
+  - → Low star count
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.68 | Flicker – brightness row variation: 30.19 | → Moderate flicker | → Severe flicker
+
+27.jpg: ✅ PASSED
+  - Image sharpness: 2288.5
+  - → Sharp
+  - Noise level: 12.8
+  - → Clean
+  - Star count: 89
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.29 | Flicker – brightness row variation: 4.94
+
+28.jpg: ❌ REJECTED
+  - Image sharpness: 43.8
+  - → Blurry
+  - Noise level: 1.6
+  - → Clean
+  - Star count: 558
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.84 | Flicker – brightness row variation: 12.3
+
+29.jpg: ❌ REJECTED
+  - Image sharpness: 96.5
+  - → Blurry
+  - Noise level: 1.9
+  - → Clean
+  - Star count: 52
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.65 | Flicker – brightness row variation: 6.15
+
+30.jpg: ✅ PASSED
+  - Image sharpness: 570.2
+  - → Sharp
+  - Noise level: 6.1
+  - → Clean
+  - Star count: 94
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.33 | Flicker – brightness row variation: 21.8 | → Moderate flicker
+
+31.jpg: ✅ PASSED
+  - Image sharpness: 3822.4
+  - → Sharp
+  - Noise level: 13.7
+  - → Clean
+  - Star count: 202
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.67 | Flicker – brightness row variation: 1.73
+
+32.jpg: ✅ PASSED
+  - Image sharpness: 825.3
+  - → Sharp
+  - Noise level: 8.0
+  - → Clean
+  - Star count: 1243
+  - → Sufficient stars
+  - → Warning: Excessive stars (possible noise)
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.95 | Flicker – brightness row variation: 25.19 | → Moderate flicker
+
+33.jpg: ✅ PASSED
+  - Image sharpness: 1489.2
+  - → Sharp
+  - Noise level: 9.7
+  - → Clean
+  - Star count: 785
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.34 | Flicker – brightness row variation: 5.52
+
+34.jpg: ❌ REJECTED
+  - Image sharpness: 5280.1
+  - → Sharp
+  - Noise level: 19.0
+  - → Noisy
+  - Star count: 228
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 4.24 | Flicker – brightness row variation: 16.41 | → Moderate flicker
+
+35.jpg: ✅ PASSED
+  - Image sharpness: 1235.7
+  - → Sharp
+  - Noise level: 10.6
+  - → Clean
+  - Star count: 194
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.69 | Flicker – brightness row variation: 14.41
+
+36.jpg: ✅ PASSED
+  - Image sharpness: 896.6
+  - → Sharp
+  - Noise level: 7.3
+  - → Clean
+  - Star count: 342
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.69 | Flicker – brightness row variation: 5.99
+
+37.jpg: ❌ REJECTED
+  - Image sharpness: 53.5
+  - → Blurry
+  - Noise level: 2.0
+  - → Clean
+  - Star count: 77
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.33 | Flicker – brightness row variation: 9.77
+
+38.jpg: ❌ REJECTED
+  - Image sharpness: 7.8
+  - → Blurry
+  - Noise level: 0.7
+  - → Clean
+  - Star count: 21
+  - → Low star count
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.32 | Flicker – brightness row variation: 2.35
+
+39.jpg: ❌ REJECTED
+  - Image sharpness: 437.2
+  - → Sharp
+  - Noise level: 5.5
+  - → Clean
+  - Star count: 29
+  - → Low star count
+  - Horizon: No strong horizontal edge
+  - → No sky detected
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.88 | Flicker – brightness row variation: 0.94
+
+40.jpg: ❌ REJECTED
+  - Image sharpness: 128.9
+  - → Blurry
+  - Noise level: 2.4
+  - → Clean
+  - Star count: 82
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.53 | Flicker – brightness row variation: 7.69
+
+41.jpg: ❌ REJECTED
+  - Image sharpness: 227.7
+  - → Blurry
+  - Noise level: 3.2
+  - → Clean
+  - Star count: 287
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.09 | Flicker – brightness row variation: 10.28
+
+42.jpg: ✅ PASSED
+  - Image sharpness: 1318.8
+  - → Sharp
+  - Noise level: 8.3
+  - → Clean
+  - Star count: 971
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.33 | Flicker – brightness row variation: 28.67 | → Moderate flicker
+
+43.jpg: ✅ PASSED
+  - Image sharpness: 1159.7
+  - → Sharp
+  - Noise level: 8.2
+  - → Clean
+  - Star count: 92
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 3.13 | Flicker – brightness row variation: 23.24 | → Moderate flicker
+
+44.jpg: ✅ PASSED
+  - Image sharpness: 677.7
+  - → Sharp
+  - Noise level: 6.0
+  - → Clean
+  - Star count: 147
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.87 | Flicker – brightness row variation: 18.29 | → Moderate flicker
+
+45.jpg: ❌ REJECTED
+  - Image sharpness: 585.7
+  - → Sharp
+  - Noise level: 6.5
+  - → Clean
+  - Star count: 843
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.08 | Flicker – brightness row variation: 40.27 | → Moderate flicker | → Severe flicker
+
+46.jpg: ✅ PASSED
+  - Image sharpness: 830.0
+  - → Sharp
+  - Noise level: 7.6
+  - → Clean
+  - Star count: 209
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 3.05 | Flicker – brightness row variation: 17.91 | → Moderate flicker
+
+47.jpg: ✅ PASSED
+  - Image sharpness: 920.5
+  - → Sharp
+  - Noise level: 7.2
+  - → Clean
+  - Star count: 431
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.5 | Flicker – brightness row variation: 16.38 | → Moderate flicker
+
+48.jpg: ✅ PASSED
+  - Image sharpness: 1252.1
+  - → Sharp
+  - Noise level: 9.9
+  - → Clean
+  - Star count: 333
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.73 | Flicker – brightness row variation: 8.73
+
+49.jpg: ❌ REJECTED
+  - Image sharpness: 13.3
+  - → Blurry
+  - Noise level: 0.9
+  - → Clean
+  - Star count: 54
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: 43.27% pixels overexposed
+  - Flicker – row diff std: 0.34 | Flicker – brightness row variation: 3.44
+
+50.jpg: ❌ REJECTED
+  - Image sharpness: 92.5
+  - → Blurry
+  - Noise level: 2.9
+  - → Clean
+  - Star count: 396
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.53 | Flicker – brightness row variation: 54.32 | → Moderate flicker | → Severe flicker
+
+51.jpg: ❌ REJECTED
+  - Image sharpness: 709.4
+  - → Sharp
+  - Noise level: 5.8
+  - → Clean
+  - Star count: 0
+  - → Low star count
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: 95.93% pixels overexposed
+  - Flicker – row diff std: 1.68 | Flicker – brightness row variation: 3.51
+
+52.jpg: ✅ PASSED
+  - Image sharpness: 2951.5
+  - → Sharp
+  - Noise level: 9.1
+  - → Clean
+  - Star count: 827
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.11 | Flicker – brightness row variation: 22.78 | → Moderate flicker
+
+53.jpg: ✅ PASSED
+  - Image sharpness: 431.1
+  - → Sharp
+  - Noise level: 6.6
+  - → Clean
+  - Star count: 124
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.5 | Flicker – brightness row variation: 1.58
+
+54.jpg: ✅ PASSED
+  - Image sharpness: 3042.6
+  - → Sharp
+  - Noise level: 13.0
+  - → Clean
+  - Star count: 179
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.42 | Flicker – brightness row variation: 11.88
+
+55.jpg: ✅ PASSED
+  - Image sharpness: 441.8
+  - → Sharp
+  - Noise level: 5.7
+  - → Clean
+  - Star count: 946
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.32 | Flicker – brightness row variation: 23.02 | → Moderate flicker
+
+56.jpg: ❌ REJECTED
+  - Image sharpness: 8150.8
+  - → Sharp
+  - Noise level: 18.7
+  - → Noisy
+  - Star count: 898
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.82 | Flicker – brightness row variation: 23.24 | → Moderate flicker
+
+57.jpg: ❌ REJECTED
+  - Image sharpness: 57.1
+  - → Blurry
+  - Noise level: 1.2
+  - → Clean
+  - Star count: 23
+  - → Low star count
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.91 | Flicker – brightness row variation: 16.97 | → Moderate flicker
+
+58.jpg: ✅ PASSED
+  - Image sharpness: 801.0
+  - → Sharp
+  - Noise level: 7.0
+  - → Clean
+  - Star count: 86
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.97 | Flicker – brightness row variation: 27.81 | → Moderate flicker
+
+59.jpg: ❌ REJECTED
+  - Image sharpness: 166.2
+  - → Blurry
+  - Noise level: 3.2
+  - → Clean
+  - Star count: 857
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.89 | Flicker – brightness row variation: 26.05 | → Moderate flicker
+
+60.jpg: ❌ REJECTED
+  - Image sharpness: 6160.2
+  - → Sharp
+  - Noise level: 19.3
+  - → Noisy
+  - Star count: 229
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.45 | Flicker – brightness row variation: 8.45
+
+61.jpg: ✅ PASSED
+  - Image sharpness: 2183.0
+  - → Sharp
+  - Noise level: 11.2
+  - → Clean
+  - Star count: 59
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.54 | Flicker – brightness row variation: 17.11 | → Moderate flicker
+
+62.jpg: ❌ REJECTED
+  - Image sharpness: 19.8
+  - → Blurry
+  - Noise level: 1.1
+  - → Clean
+  - Star count: 1494
+  - → Sufficient stars
+  - → Warning: Excessive stars (possible noise)
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.76 | Flicker – brightness row variation: 15.53 | → Moderate flicker
+
+63.jpg: ❌ REJECTED
+  - Image sharpness: 65.9
+  - → Blurry
+  - Noise level: 2.1
+  - → Clean
+  - Star count: 54
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.83 | Flicker – brightness row variation: 31.07 | → Moderate flicker | → Severe flicker
+
+64.jpg: ❌ REJECTED
+  - Image sharpness: 283.0
+  - → Blurry
+  - Noise level: 1.3
+  - → Clean
+  - Star count: 0
+  - → Low star count
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: 95.57% pixels overexposed
+  - Flicker – row diff std: 1.58 | Flicker – brightness row variation: 13.06
+
+65.jpg: ✅ PASSED
+  - Image sharpness: 696.4
+  - → Sharp
+  - Noise level: 7.2
+  - → Clean
+  - Star count: 318
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 3.32 | Flicker – brightness row variation: 16.37 | → Moderate flicker
+
+66.jpg: ❌ REJECTED
+  - Image sharpness: 263.4
+  - → Blurry
+  - Noise level: 5.0
+  - → Clean
+  - Star count: 67
+  - → Sufficient stars
+  - Horizon: No strong horizontal edge
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.6 | Flicker – brightness row variation: 0.49
+
+67.jpg: ✅ PASSED
+  - Image sharpness: 1761.6
+  - → Sharp
+  - Noise level: 11.1
+  - → Clean
+  - Star count: 77
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 3.0 | Flicker – brightness row variation: 11.49
+
+68.jpg: ✅ PASSED
+  - Image sharpness: 809.5
+  - → Sharp
+  - Noise level: 7.7
+  - → Clean
+  - Star count: 100
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.15 | Flicker – brightness row variation: 15.15 | → Moderate flicker
+
+69.jpg: ❌ REJECTED
+  - Image sharpness: 101.7
+  - → Blurry
+  - Noise level: 1.9
+  - → Clean
+  - Star count: 100
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: 87.8% pixels overexposed
+  - Flicker – row diff std: 0.99 | Flicker – brightness row variation: 4.71
+
+70.jpg: ✅ PASSED
+  - Image sharpness: 639.6
+  - → Sharp
+  - Noise level: 7.0
+  - → Clean
+  - Star count: 286
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.72 | Flicker – brightness row variation: 3.3
+
+71.jpg: ✅ PASSED
+  - Image sharpness: 1794.8
+  - → Sharp
+  - Noise level: 10.2
+  - → Clean
+  - Star count: 244
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.76 | Flicker – brightness row variation: 19.69 | → Moderate flicker
+
+72.jpg: ✅ PASSED
+  - Image sharpness: 1121.5
+  - → Sharp
+  - Noise level: 7.8
+  - → Clean
+  - Star count: 422
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.59 | Flicker – brightness row variation: 18.9 | → Moderate flicker
+
+73.jpg: ❌ REJECTED
+  - Image sharpness: 629.7
+  - → Sharp
+  - Noise level: 3.4
+  - → Clean
+  - Star count: 36
+  - → Low star count
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: 78.88% pixels overexposed
+  - Flicker – row diff std: 4.46 | Flicker – brightness row variation: 19.72 | → Moderate flicker
+
+74.jpg: ❌ REJECTED
+  - Image sharpness: 1139.2
+  - → Sharp
+  - Noise level: 8.4
+  - → Clean
+  - Star count: 1242
+  - → Sufficient stars
+  - → Warning: Excessive stars (possible noise)
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.98 | Flicker – brightness row variation: 38.51 | → Moderate flicker | → Severe flicker
+
+75.jpg: ❌ REJECTED
+  - Image sharpness: 95.1
+  - → Blurry
+  - Noise level: 1.5
+  - → Clean
+  - Star count: 0
+  - → Low star count
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.61 | Flicker – brightness row variation: 3.08
+
+76.jpg: ✅ PASSED
+  - Image sharpness: 1866.0
+  - → Sharp
+  - Noise level: 9.3
+  - → Clean
+  - Star count: 1479
+  - → Sufficient stars
+  - → Warning: Excessive stars (possible noise)
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.53 | Flicker – brightness row variation: 27.85 | → Moderate flicker
+
+77.jpg: ✅ PASSED
+  - Image sharpness: 1977.1
+  - → Sharp
+  - Noise level: 11.4
+  - → Clean
+  - Star count: 275
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.49 | Flicker – brightness row variation: 12.04
+
+78.jpg: ✅ PASSED
+  - Image sharpness: 2014.3
+  - → Sharp
+  - Noise level: 11.0
+  - → Clean
+  - Star count: 1251
+  - → Sufficient stars
+  - → Warning: Excessive stars (possible noise)
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.98 | Flicker – brightness row variation: 18.45 | → Moderate flicker
+
+79.jpg: ❌ REJECTED
+  - Image sharpness: 650.3
+  - → Sharp
+  - Noise level: 3.6
+  - → Clean
+  - Star count: 98
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: 95.42% pixels overexposed
+  - Flicker – row diff std: 0.94 | Flicker – brightness row variation: 6.48
+
+80.jpg: ❌ REJECTED
+  - Image sharpness: 17.3
+  - → Blurry
+  - Noise level: 1.1
+  - → Clean
+  - Star count: 21
+  - → Low star count
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.57 | Flicker – brightness row variation: 17.2 | → Moderate flicker
+
+81.jpg: ✅ PASSED
+  - Image sharpness: 420.1
+  - → Sharp
+  - Noise level: 5.0
+  - → Clean
+  - Star count: 285
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.06 | Flicker – brightness row variation: 10.35
+
+82.jpg: ❌ REJECTED
+  - Image sharpness: 394.4
+  - → Blurry
+  - Noise level: 5.3
+  - → Clean
+  - Star count: 807
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.6 | Flicker – brightness row variation: 11.76
+
+83.jpg: ✅ PASSED
+  - Image sharpness: 2730.6
+  - → Sharp
+  - Noise level: 11.1
+  - → Clean
+  - Star count: 102
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 4.79 | Flicker – brightness row variation: 9.25
+
+84.jpg: ✅ PASSED
+  - Image sharpness: 2126.2
+  - → Sharp
+  - Noise level: 10.1
+  - → Clean
+  - Star count: 354
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.41 | Flicker – brightness row variation: 2.45
+
+85.jpg: ❌ REJECTED
+  - Image sharpness: 83.3
+  - → Blurry
+  - Noise level: 2.9
+  - → Clean
+  - Star count: 84
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.3 | Flicker – brightness row variation: 4.44
+
+86.jpg: ❌ REJECTED
+  - Image sharpness: 1954.1
+  - → Sharp
+  - Noise level: 3.3
+  - → Clean
+  - Star count: 0
+  - → Low star count
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.39 | Flicker – brightness row variation: 60.87 | → Moderate flicker | → Severe flicker
+
+87.jpg: ❌ REJECTED
+  - Image sharpness: 591.6
+  - → Sharp
+  - Noise level: 1.7
+  - → Clean
+  - Star count: 130
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: 35.63% pixels overexposed
+  - Flicker – row diff std: 3.78 | Flicker – brightness row variation: 25.94 | → Moderate flicker
+
+88.jpg: ❌ REJECTED
+  - Image sharpness: 186.7
+  - → Blurry
+  - Noise level: 4.0
+  - → Clean
+  - Star count: 117
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.54 | Flicker – brightness row variation: 5.22
+
+89.jpg: ✅ PASSED
+  - Image sharpness: 1296.8
+  - → Sharp
+  - Noise level: 9.5
+  - → Clean
+  - Star count: 449
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.58 | Flicker – brightness row variation: 5.56
+
+90.jpg: ✅ PASSED
+  - Image sharpness: 1741.3
+  - → Sharp
+  - Noise level: 8.9
+  - → Clean
+  - Star count: 451
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.25 | Flicker – brightness row variation: 17.08 | → Moderate flicker
+
+91.jpg: ❌ REJECTED
+  - Image sharpness: 30.2
+  - → Blurry
+  - Noise level: 1.2
+  - → Clean
+  - Star count: 56
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.58 | Flicker – brightness row variation: 18.44 | → Moderate flicker
+
+92.jpg: ✅ PASSED
+  - Image sharpness: 562.2
+  - → Sharp
+  - Noise level: 4.8
+  - → Clean
+  - Star count: 478
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.26 | Flicker – brightness row variation: 14.77
+
+93.jpg: ❌ REJECTED
+  - Image sharpness: 333.0
+  - → Blurry
+  - Noise level: 5.6
+  - → Clean
+  - Star count: 714
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.08 | Flicker – brightness row variation: 21.01 | → Moderate flicker
+
+94.jpg: ❌ REJECTED
+  - Image sharpness: 2249.6
+  - → Sharp
+  - Noise level: 13.3
+  - → Clean
+  - Star count: 10
+  - → Low star count
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.26 | Flicker – brightness row variation: 7.37
+
+95.jpg: ❌ REJECTED
+  - Image sharpness: 171.1
+  - → Blurry
+  - Noise level: 3.8
+  - → Clean
+  - Star count: 847
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.68 | Flicker – brightness row variation: 26.46 | → Moderate flicker
+
+96.jpg: ✅ PASSED
+  - Image sharpness: 406.1
+  - → Sharp
+  - Noise level: 4.3
+  - → Clean
+  - Star count: 1149
+  - → Sufficient stars
+  - → Warning: Excessive stars (possible noise)
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.23 | Flicker – brightness row variation: 13.99
+
+97.jpg: ❌ REJECTED
+  - Image sharpness: 1720.9
+  - → Sharp
+  - Noise level: 9.4
+  - → Clean
+  - Star count: 198
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 13.77 | Flicker – brightness row variation: 52.69 | → Moderate flicker | → Severe flicker
+
+98.jpg: ❌ REJECTED
+  - Image sharpness: 256.1
+  - → Blurry
+  - Noise level: 3.9
+  - → Clean
+  - Star count: 936
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.89 | Flicker – brightness row variation: 28.76 | → Moderate flicker
+
+99.jpg: ✅ PASSED
+  - Image sharpness: 2361.9
+  - → Sharp
+  - Noise level: 11.6
+  - → Clean
+  - Star count: 585
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 6.55 | Flicker – brightness row variation: 19.4 | → Moderate flicker
+
+100.jpg: ❌ REJECTED
+  - Image sharpness: 40.6
+  - → Blurry
+  - Noise level: 1.7
+  - → Clean
+  - Star count: 110
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.57 | Flicker – brightness row variation: 6.07
+
+101.jpg: ✅ PASSED
+  - Image sharpness: 1513.4
+  - → Sharp
+  - Noise level: 10.6
+  - → Clean
+  - Star count: 424
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.13 | Flicker – brightness row variation: 9.19
+
+102.jpg: ✅ PASSED
+  - Image sharpness: 3399.0
+  - → Sharp
+  - Noise level: 12.8
+  - → Clean
+  - Star count: 194
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.87 | Flicker – brightness row variation: 4.13
+
+103.jpg: ❌ REJECTED
+  - Image sharpness: 1531.2
+  - → Sharp
+  - Noise level: 10.1
+  - → Clean
+  - Star count: 1029
+  - → Sufficient stars
+  - → Warning: Excessive stars (possible noise)
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 3.51 | Flicker – brightness row variation: 44.14 | → Moderate flicker | → Severe flicker
+
+104.jpg: ❌ REJECTED
+  - Image sharpness: 225.2
+  - → Blurry
+  - Noise level: 4.1
+  - → Clean
+  - Star count: 121
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.45 | Flicker – brightness row variation: 28.49 | → Moderate flicker
+
+105.jpg: ✅ PASSED
+  - Image sharpness: 940.9
+  - → Sharp
+  - Noise level: 8.3
+  - → Clean
+  - Star count: 1185
+  - → Sufficient stars
+  - → Warning: Excessive stars (possible noise)
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.25 | Flicker – brightness row variation: 13.38
+
+106.jpg: ❌ REJECTED
+  - Image sharpness: 8560.0
+  - → Sharp
+  - Noise level: 20.3
+  - → Noisy
+  - Star count: 489
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 4.76 | Flicker – brightness row variation: 10.39
+
+107.jpg: ✅ PASSED
+  - Image sharpness: 3118.0
+  - → Sharp
+  - Noise level: 10.9
+  - → Clean
+  - Star count: 808
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.76 | Flicker – brightness row variation: 19.8 | → Moderate flicker
+
+108.jpg: ✅ PASSED
+  - Image sharpness: 512.8
+  - → Sharp
+  - Noise level: 6.7
+  - → Clean
+  - Star count: 760
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.8 | Flicker – brightness row variation: 20.05 | → Moderate flicker
+
+109.jpg: ❌ REJECTED
+  - Image sharpness: 318.8
+  - → Blurry
+  - Noise level: 4.3
+  - → Clean
+  - Star count: 157
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.21 | Flicker – brightness row variation: 13.91
+
+110.jpg: ✅ PASSED
+  - Image sharpness: 2321.7
+  - → Sharp
+  - Noise level: 11.4
+  - → Clean
+  - Star count: 391
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.39 | Flicker – brightness row variation: 14.75
+
+111.jpg: ❌ REJECTED
+  - Image sharpness: 9534.2
+  - → Sharp
+  - Noise level: 24.7
+  - → Noisy
+  - Star count: 100
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 3.58 | Flicker – brightness row variation: 12.38
+
+112.jpg: ✅ PASSED
+  - Image sharpness: 985.0
+  - → Sharp
+  - Noise level: 7.5
+  - → Clean
+  - Star count: 914
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 5.66 | Flicker – brightness row variation: 24.0 | → Moderate flicker
+
+113.jpg: ✅ PASSED
+  - Image sharpness: 1053.2
+  - → Sharp
+  - Noise level: 7.8
+  - → Clean
+  - Star count: 539
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 6.52 | Flicker – brightness row variation: 18.01 | → Moderate flicker
+
+114.jpg: ✅ PASSED
+  - Image sharpness: 4303.6
+  - → Sharp
+  - Noise level: 14.4
+  - → Clean
+  - Star count: 147
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.52 | Flicker – brightness row variation: 6.3
+
+115.jpg: ❌ REJECTED
+  - Image sharpness: 205.2
+  - → Blurry
+  - Noise level: 0.5
+  - → Clean
+  - Star count: 12
+  - → Low star count
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: 73.88% pixels overexposed
+  - Flicker – row diff std: 0.74 | Flicker – brightness row variation: 24.41 | → Moderate flicker
+
+116.jpg: ❌ REJECTED
+  - Image sharpness: 84.0
+  - → Blurry
+  - Noise level: 2.4
+  - → Clean
+  - Star count: 1085
+  - → Sufficient stars
+  - → Warning: Excessive stars (possible noise)
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.86 | Flicker – brightness row variation: 15.98 | → Moderate flicker
+
+117.jpg: ❌ REJECTED
+  - Image sharpness: 3313.8
+  - → Sharp
+  - Noise level: 15.4
+  - → Noisy
+  - Star count: 0
+  - → Low star count
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 5.37 | Flicker – brightness row variation: 19.23 | → Moderate flicker
+
+118.jpg: ❌ REJECTED
+  - Image sharpness: 7734.7
+  - → Sharp
+  - Noise level: 21.3
+  - → Noisy
+  - Star count: 29
+  - → Low star count
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 6.58 | Flicker – brightness row variation: 5.59
+
+119.jpg: ❌ REJECTED
+  - Image sharpness: 97.9
+  - → Blurry
+  - Noise level: 2.6
+  - → Clean
+  - Star count: 617
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.57 | Flicker – brightness row variation: 37.48 | → Moderate flicker | → Severe flicker
+
+120.jpg: ❌ REJECTED
+  - Image sharpness: 2037.2
+  - → Sharp
+  - Noise level: 9.5
+  - → Clean
+  - Star detection error: OpenCV(4.11.0) /Users/runner/work/opencv-python/opencv-python/opencv/modules/imgproc/src/color.simd_helpers.hpp:92: error: (-15:Bad number of channels) in function 'cv::impl::(anonymous namespace)::CvtHelper<cv::impl::(anonymous namespace)::Set<3, 4>, cv::impl::(anonymous namespace)::Set<1>, cv::impl::(anonymous namespace)::Set<0, 2, 5>>::CvtHelper(InputArray, OutputArray, int) [VScn = cv::impl::(anonymous namespace)::Set<3, 4>, VDcn = cv::impl::(anonymous namespace)::Set<1>, VDepth = cv::impl::(anonymous namespace)::Set<0, 2, 5>, sizePolicy = cv::impl::(anonymous namespace)::NONE]'
+> Invalid number of channels in input image:
+>     'VScn::contains(scn)'
+> where
+>     'scn' is 1
+
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: 92.99% pixels overexposed
+  - Flicker – row diff std: 5.52 | Flicker – brightness row variation: 12.44
+
+121.jpg: ✅ PASSED
+  - Image sharpness: 770.2
+  - → Sharp
+  - Noise level: 6.6
+  - → Clean
+  - Star count: 361
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.29 | Flicker – brightness row variation: 2.74
+
+122.jpg: ❌ REJECTED
+  - Image sharpness: 55.7
+  - → Blurry
+  - Noise level: 1.8
+  - → Clean
+  - Star count: 889
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.78 | Flicker – brightness row variation: 20.51 | → Moderate flicker
+
+123.jpg: ❌ REJECTED
+  - Image sharpness: 2865.8
+  - → Sharp
+  - Noise level: 8.9
+  - → Clean
+  - Star count: 23
+  - → Low star count
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 5.77 | Flicker – brightness row variation: 3.62
+
+124.jpg: ❌ REJECTED
+  - Image sharpness: 192.9
+  - → Blurry
+  - Noise level: 4.0
+  - → Clean
+  - Star count: 584
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.01 | Flicker – brightness row variation: 14.39
+
+125.jpg: ✅ PASSED
+  - Image sharpness: 803.9
+  - → Sharp
+  - Noise level: 7.8
+  - → Clean
+  - Star count: 490
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.82 | Flicker – brightness row variation: 25.22 | → Moderate flicker
+
+126.jpg: ❌ REJECTED
+  - Image sharpness: 4.8
+  - → Blurry
+  - Noise level: 0.5
+  - → Clean
+  - Star count: 2
+  - → Low star count
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.36 | Flicker – brightness row variation: 31.61 | → Moderate flicker | → Severe flicker
+
+127.jpg: ❌ REJECTED
+  - Image sharpness: 3065.6
+  - → Sharp
+  - Noise level: 12.6
+  - → Clean
+  - Star count: 20
+  - → Low star count
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 4.09 | Flicker – brightness row variation: 23.41 | → Moderate flicker
+
+128.jpg: ❌ REJECTED
+  - Image sharpness: 125.1
+  - → Blurry
+  - Noise level: 3.4
+  - → Clean
+  - Star count: 460
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.36 | Flicker – brightness row variation: 28.88 | → Moderate flicker
+
+129.jpg: ✅ PASSED
+  - Image sharpness: 2157.8
+  - → Sharp
+  - Noise level: 11.1
+  - → Clean
+  - Star count: 211
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.51 | Flicker – brightness row variation: 12.09
+
+130.jpg: ❌ REJECTED
+  - Image sharpness: 257.3
+  - → Blurry
+  - Noise level: 4.5
+  - → Clean
+  - Star count: 245
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.82 | Flicker – brightness row variation: 22.04 | → Moderate flicker
+
+131.jpg: ❌ REJECTED
+  - Image sharpness: 81.4
+  - → Blurry
+  - Noise level: 2.5
+  - → Clean
+  - Star count: 1079
+  - → Sufficient stars
+  - → Warning: Excessive stars (possible noise)
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.69 | Flicker – brightness row variation: 11.4
+
+132.jpg: ❌ REJECTED
+  - Image sharpness: 1012.9
+  - → Sharp
+  - Noise level: 3.6
+  - → Clean
+  - Star count: 38
+  - → Low star count
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: 88.65% pixels overexposed
+  - Flicker – row diff std: 3.23 | Flicker – brightness row variation: 27.42 | → Moderate flicker
+
+133.jpg: ❌ REJECTED
+  - Image sharpness: 38.8
+  - → Blurry
+  - Noise level: 1.6
+  - → Clean
+  - Star count: 217
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.37 | Flicker – brightness row variation: 21.35 | → Moderate flicker
+
+134.jpg: ✅ PASSED
+  - Image sharpness: 776.1
+  - → Sharp
+  - Noise level: 6.9
+  - → Clean
+  - Star count: 250
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.13 | Flicker – brightness row variation: 18.4 | → Moderate flicker
+
+135.jpg: ✅ PASSED
+  - Image sharpness: 2580.5
+  - → Sharp
+  - Noise level: 13.4
+  - → Clean
+  - Star count: 249
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.89 | Flicker – brightness row variation: 4.84
+
+136.jpg: ❌ REJECTED
+  - Image sharpness: 786.1
+  - → Sharp
+  - Noise level: 1.5
+  - → Clean
+  - Star detection error: OpenCV(4.11.0) /Users/runner/work/opencv-python/opencv-python/opencv/modules/imgproc/src/color.simd_helpers.hpp:92: error: (-15:Bad number of channels) in function 'cv::impl::(anonymous namespace)::CvtHelper<cv::impl::(anonymous namespace)::Set<3, 4>, cv::impl::(anonymous namespace)::Set<1>, cv::impl::(anonymous namespace)::Set<0, 2, 5>>::CvtHelper(InputArray, OutputArray, int) [VScn = cv::impl::(anonymous namespace)::Set<3, 4>, VDcn = cv::impl::(anonymous namespace)::Set<1>, VDepth = cv::impl::(anonymous namespace)::Set<0, 2, 5>, sizePolicy = cv::impl::(anonymous namespace)::NONE]'
+> Invalid number of channels in input image:
+>     'VScn::contains(scn)'
+> where
+>     'scn' is 1
+
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: 39.56% pixels overexposed
+  - Flicker – row diff std: 7.43 | Flicker – brightness row variation: 54.66 | → Moderate flicker | → Severe flicker
+
+137.jpg: ✅ PASSED
+  - Image sharpness: 1264.5
+  - → Sharp
+  - Noise level: 9.0
+  - → Clean
+  - Star count: 462
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.79 | Flicker – brightness row variation: 12.12
+
+138.jpg: ❌ REJECTED
+  - Image sharpness: 1414.3
+  - → Sharp
+  - Noise level: 8.4
+  - → Clean
+  - Star count: 27
+  - → Low star count
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 3.56 | Flicker – brightness row variation: 16.8 | → Moderate flicker
+
+139.jpg: ❌ REJECTED
+  - Image sharpness: 81.3
+  - → Blurry
+  - Noise level: 2.1
+  - → Clean
+  - Star count: 4
+  - → Low star count
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.15 | Flicker – brightness row variation: 22.0 | → Moderate flicker
+
+140.jpg: ✅ PASSED
+  - Image sharpness: 2144.8
+  - → Sharp
+  - Noise level: 12.1
+  - → Clean
+  - Star count: 645
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 3.1 | Flicker – brightness row variation: 22.51 | → Moderate flicker
+
+141.jpg: ❌ REJECTED
+  - Image sharpness: 129.3
+  - → Blurry
+  - Noise level: 2.4
+  - → Clean
+  - Star count: 15
+  - → Low star count
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.24 | Flicker – brightness row variation: 8.5
+
+142.jpg: ✅ PASSED
+  - Image sharpness: 915.7
+  - → Sharp
+  - Noise level: 7.5
+  - → Clean
+  - Star count: 65
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 3.17 | Flicker – brightness row variation: 6.92
+
+143.jpg: ✅ PASSED
+  - Image sharpness: 695.8
+  - → Sharp
+  - Noise level: 7.1
+  - → Clean
+  - Star count: 1531
+  - → Sufficient stars
+  - → Warning: Excessive stars (possible noise)
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.91 | Flicker – brightness row variation: 21.39 | → Moderate flicker
+
+144.jpg: ❌ REJECTED
+  - Image sharpness: 37.1
+  - → Blurry
+  - Noise level: 0.9
+  - → Clean
+  - Star count: 0
+  - → Low star count
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: 89.65% pixels overexposed
+  - Flicker – row diff std: 1.11 | Flicker – brightness row variation: 6.01
+
+145.jpg: ✅ PASSED
+  - Image sharpness: 628.4
+  - → Sharp
+  - Noise level: 6.1
+  - → Clean
+  - Star count: 424
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.3 | Flicker – brightness row variation: 5.77
+
+146.jpg: ❌ REJECTED
+  - Image sharpness: 65.2
+  - → Blurry
+  - Noise level: 2.3
+  - → Clean
+  - Star count: 538
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.95 | Flicker – brightness row variation: 15.86 | → Moderate flicker
+
+147.jpg: ✅ PASSED
+  - Image sharpness: 592.8
+  - → Sharp
+  - Noise level: 6.0
+  - → Clean
+  - Star count: 1202
+  - → Sufficient stars
+  - → Warning: Excessive stars (possible noise)
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.92 | Flicker – brightness row variation: 12.79
+
+148.jpg: ❌ REJECTED
+  - Image sharpness: 234.2
+  - → Blurry
+  - Noise level: 3.9
+  - → Clean
+  - Star count: 711
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.9 | Flicker – brightness row variation: 18.9 | → Moderate flicker
+
+149.jpg: ❌ REJECTED
+  - Image sharpness: 7054.6
+  - → Sharp
+  - Noise level: 19.1
+  - → Noisy
+  - Star count: 1114
+  - → Sufficient stars
+  - → Warning: Excessive stars (possible noise)
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.26 | Flicker – brightness row variation: 7.3
+
+150.jpg: ❌ REJECTED
+  - Image sharpness: 6190.8
+  - → Sharp
+  - Noise level: 17.9
+  - → Noisy
+  - Star count: 167
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.29 | Flicker – brightness row variation: 13.11
+
+151.jpg: ❌ REJECTED
+  - Image sharpness: 48.2
+  - → Blurry
+  - Noise level: 2.1
+  - → Clean
+  - Star count: 366
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.02 | Flicker – brightness row variation: 31.76 | → Moderate flicker | → Severe flicker
+
+152.jpg: ❌ REJECTED
+  - Image sharpness: 49.3
+  - → Blurry
+  - Noise level: 1.4
+  - → Clean
+  - Star count: 8
+  - → Low star count
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 5.29 | Flicker – brightness row variation: 24.37 | → Moderate flicker
+
+153.jpg: ❌ REJECTED
+  - Image sharpness: 246.6
+  - → Blurry
+  - Noise level: 2.8
+  - → Clean
+  - Star count: 210
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: 84.42% pixels overexposed
+  - Flicker – row diff std: 6.61 | Flicker – brightness row variation: 59.33 | → Moderate flicker | → Severe flicker
+
+154.jpg: ✅ PASSED
+  - Image sharpness: 1056.7
+  - → Sharp
+  - Noise level: 9.6
+  - → Clean
+  - Star count: 215
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.46 | Flicker – brightness row variation: 19.24 | → Moderate flicker
+
+155.jpg: ❌ REJECTED
+  - Image sharpness: 127.0
+  - → Blurry
+  - Noise level: 3.0
+  - → Clean
+  - Star count: 273
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.08 | Flicker – brightness row variation: 21.1 | → Moderate flicker
+
+156.jpg: ✅ PASSED
+  - Image sharpness: 517.0
+  - → Sharp
+  - Noise level: 6.1
+  - → Clean
+  - Star count: 869
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.5 | Flicker – brightness row variation: 20.93 | → Moderate flicker
+
+157.jpg: ✅ PASSED
+  - Image sharpness: 2040.9
+  - → Sharp
+  - Noise level: 13.0
+  - → Clean
+  - Star count: 516
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.36 | Flicker – brightness row variation: 7.38
+
+158.jpg: ✅ PASSED
+  - Image sharpness: 462.8
+  - → Sharp
+  - Noise level: 5.3
+  - → Clean
+  - Star count: 258
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.87 | Flicker – brightness row variation: 12.28
+
+159.jpg: ✅ PASSED
+  - Image sharpness: 2973.3
+  - → Sharp
+  - Noise level: 10.6
+  - → Clean
+  - Star count: 1534
+  - → Sufficient stars
+  - → Warning: Excessive stars (possible noise)
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.9 | Flicker – brightness row variation: 17.91 | → Moderate flicker
+
+160.jpg: ❌ REJECTED
+  - Image sharpness: 777.3
+  - → Sharp
+  - Noise level: 3.6
+  - → Clean
+  - Star count: 10
+  - → Low star count
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: 83.66% pixels overexposed
+  - Flicker – row diff std: 7.44 | Flicker – brightness row variation: 57.41 | → Moderate flicker | → Severe flicker
+
+161.jpg: ❌ REJECTED
+  - Image sharpness: 54.0
+  - → Blurry
+  - Noise level: 1.0
+  - → Clean
+  - Star count: 0
+  - → Low star count
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: 80.5% pixels overexposed
+  - Flicker – row diff std: 0.78 | Flicker – brightness row variation: 9.39
+
+162.jpg: ❌ REJECTED
+  - Image sharpness: 566.3
+  - → Sharp
+  - Noise level: 6.2
+  - → Clean
+  - Star count: 698
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.24 | Flicker – brightness row variation: 31.3 | → Moderate flicker | → Severe flicker
+
+163.jpg: ✅ PASSED
+  - Image sharpness: 3254.1
+  - → Sharp
+  - Noise level: 14.0
+  - → Clean
+  - Star count: 344
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.79 | Flicker – brightness row variation: 11.66
+
+164.jpg: ❌ REJECTED
+  - Image sharpness: 963.6
+  - → Sharp
+  - Noise level: 6.9
+  - → Clean
+  - Star count: 11
+  - → Low star count
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.87 | Flicker – brightness row variation: 11.61
+
+165.jpg: ❌ REJECTED
+  - Image sharpness: 9931.0
+  - → Sharp
+  - Noise level: 22.5
+  - → Noisy
+  - Star count: 25
+  - → Low star count
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.11 | Flicker – brightness row variation: 11.39
+
+166.jpg: ❌ REJECTED
+  - Image sharpness: 36.7
+  - → Blurry
+  - Noise level: 1.5
+  - → Clean
+  - Star count: 77
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.68 | Flicker – brightness row variation: 10.66
+
+167.jpg: ❌ REJECTED
+  - Image sharpness: 86.4
+  - → Blurry
+  - Noise level: 2.7
+  - → Clean
+  - Star count: 119
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.93 | Flicker – brightness row variation: 15.71 | → Moderate flicker
+
+168.jpg: ✅ PASSED
+  - Image sharpness: 435.9
+  - → Sharp
+  - Noise level: 5.7
+  - → Clean
+  - Star count: 185
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.05 | Flicker – brightness row variation: 10.84
+
+169.jpg: ✅ PASSED
+  - Image sharpness: 427.5
+  - → Sharp
+  - Noise level: 4.1
+  - → Clean
+  - Star count: 112
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.92 | Flicker – brightness row variation: 24.6 | → Moderate flicker
+
+170.jpg: ✅ PASSED
+  - Image sharpness: 3626.2
+  - → Sharp
+  - Noise level: 13.4
+  - → Clean
+  - Star count: 147
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 5.08 | Flicker – brightness row variation: 17.87 | → Moderate flicker
+
+171.jpg: ❌ REJECTED
+  - Image sharpness: 5.3
+  - → Blurry
+  - Noise level: 0.4
+  - → Clean
+  - Star count: 284
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: 9.77% pixels overexposed
+  - Flicker – row diff std: 0.2 | Flicker – brightness row variation: 26.46 | → Moderate flicker
+
+172.jpg: ❌ REJECTED
+  - Image sharpness: 796.2
+  - → Sharp
+  - Noise level: 5.1
+  - → Clean
+  - Star count: 0
+  - → Low star count
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 9.59 | Flicker – brightness row variation: 34.0 | → Moderate flicker | → Severe flicker
+
+173.jpg: ✅ PASSED
+  - Image sharpness: 623.5
+  - → Sharp
+  - Noise level: 6.1
+  - → Clean
+  - Star count: 1453
+  - → Sufficient stars
+  - → Warning: Excessive stars (possible noise)
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 1.63 | Flicker – brightness row variation: 7.34
+
+174.jpg: ❌ REJECTED
+  - Image sharpness: 151.8
+  - → Blurry
+  - Noise level: 3.5
+  - → Clean
+  - Star count: 1235
+  - → Sufficient stars
+  - → Warning: Excessive stars (possible noise)
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.89 | Flicker – brightness row variation: 13.51
+
+175.jpg: ❌ REJECTED
+  - Image sharpness: 7102.6
+  - → Sharp
+  - Noise level: 20.6
+  - → Noisy
+  - Star count: 275
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.41 | Flicker – brightness row variation: 2.96
