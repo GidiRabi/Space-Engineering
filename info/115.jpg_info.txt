@@ -1,0 +1,10 @@
+115.jpg: ❌ REJECTED
+  - Image sharpness: 205.2
+  - → Blurry
+  - Noise level: 0.5
+  - → Clean
+  - Star count: 12
+  - → Low star count
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: 73.88% pixels overexposed
+  - Flicker – row diff std: 0.74 | Flicker – brightness row variation: 24.41 | → Moderate flicker

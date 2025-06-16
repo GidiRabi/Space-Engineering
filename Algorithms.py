@@ -159,6 +159,51 @@ def run_phase1_on_folder(folder_path='stars'):
 
     return results
 
+def analyze_image(image_path):
+    image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
+    if image is None:
+        return f"{os.path.basename(image_path)}: ERROR – Could not read image"
+
+    passed_all = True
+    tags = []
+
+    # Quality
+    q_ok, q_tags = check_quality(image)
+    tags.extend(q_tags)
+    if not q_ok:
+        passed_all = False
+
+    # Stars
+    s_ok, s_tags = detect_stars_with_sky_mask(image_path)
+    tags.extend(s_tags)
+    if not s_ok:
+        passed_all = False
+
+    # Horizon
+    h_ok, h_tag = detect_horizon(image)
+    tags.append(h_tag)
+    if not h_ok and not s_ok:
+        tags.append("→ No sky detected")
+
+    # Glitch
+    g_ok, g_tag = detect_glitch(image)
+    tags.append(g_tag)
+    if not g_ok:
+        passed_all = False
+
+    # Flicker
+    f_ok, f_tag = detect_flicker(image)
+    tags.append(f_tag)
+    if not f_ok:
+        passed_all = False
+
+    status = "✅ PASSED" if passed_all else "❌ REJECTED"
+
+    result = f"{os.path.basename(image_path)}: {status}\n"
+    result += "\n".join(f"  - {t}" for t in tags)
+    return result
+
+
 if __name__ == '__main__':
     from contextlib import redirect_stdout
 

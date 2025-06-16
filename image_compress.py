@@ -1,42 +1,50 @@
 import cv2
+import numpy as np
+import pywt
+import imageio
 import os
 
-def compress_image(input_path, output_path=None, quality=80):
-    """
-    Compress an image using JPEG compression.
-    Args:
-        input_path (str): Path to the input image file.
-        output_path (str, optional): Path to save the compressed image. 
-                                     If None, saves as input_path + '_compressed.jpg'.
-        quality (int): JPEG quality (0-100, higher means better quality and less compression).
-    Returns:
-        str: Path to the compressed image.
-    """
-    # Read the image
-    image = cv2.imread(input_path)
-    if image is None:
-        raise ValueError(f"Could not read input image: {input_path}")
+def compress_image_wavelet(input_path, output_path, wavelet='haar', level=2, quant_level=30):
+    # Load color image (BGR)
+    img = cv2.imread(input_path)
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
-    # Set output path if not provided
-    if output_path is None:
-        base, ext = os.path.splitext(input_path)
-        output_path = f"{base}_compressed.jpg"
+    # Convert to YUV (better for visual compression)
+    img_yuv = cv2.cvtColor(img, cv2.COLOR_RGB2YUV)
+    channels = cv2.split(img_yuv)
 
-    # Compress and save the image
-    success = cv2.imwrite(output_path, image, [int(cv2.IMWRITE_JPEG_QUALITY), quality])
-    if not success:
-        raise IOError(f"Could not write compressed image to: {output_path}")
+    compressed_channels = []
 
-    return output_path
+    for channel in channels:
+        # Perform multi-level wavelet decomposition
+        coeffs = pywt.wavedec2(channel, wavelet=wavelet, level=level)
+        coeffs_quant = []
 
+        for i, c in enumerate(coeffs):
+            if i == 0:
+                # Approximation (low freq): keep as is
+                coeffs_quant.append(c)
+            else:
+                # Details (high freq): quantize aggressively
+                cH, cV, cD = c
+                cH_q = np.round(cH / quant_level)
+                cV_q = np.round(cV / quant_level)
+                cD_q = np.round(cD / quant_level)
+                coeffs_quant.append((cH_q, cV_q, cD_q))
+
+        # Reconstruct
+        compressed = pywt.waverec2(coeffs_quant, wavelet=wavelet)
+        compressed = np.clip(compressed, 0, 255).astype(np.uint8)
+        compressed_channels.append(compressed)
+
+    # Merge and convert back
+    compressed_yuv = cv2.merge(compressed_channels)
+    compressed_rgb = cv2.cvtColor(compressed_yuv, cv2.COLOR_YUV2RGB)
+
+    # Save as high-efficiency format (WebP or PNG)
+    imageio.imwrite(output_path, compressed_rgb, format='WEBP', quality=85)
+    print(f"✅ Wavelet-compressed image saved to {output_path}")
+
+# === EXAMPLE USAGE ===
 if __name__ == "__main__":
-    # Example usage: compress an image provided by the user
-    input_path = input("Enter path to image to compress: ").strip()
-    quality = input("Enter JPEG quality (0-100, default 80): ").strip()
-    quality = int(quality) if quality.isdigit() else 80
-
-    try:
-        output_path = compress_image(input_path, quality=quality)
-        print(f"Compressed image saved to: {output_path}")
-    except Exception as e:
-        print(f"Error: {e}")
+    compress_image_wavelet("Images/good5.png", "wavelet_compressed.webp")

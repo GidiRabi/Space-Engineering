@@ -1,0 +1,10 @@
+90.jpg: ✅ PASSED
+  - Image sharpness: 1741.3
+  - → Sharp
+  - Noise level: 8.9
+  - → Clean
+  - Star count: 451
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 2.25 | Flicker – brightness row variation: 17.08 | → Moderate flicker
