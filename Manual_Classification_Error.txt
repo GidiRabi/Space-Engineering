@@ -1,0 +1,27 @@
+3- should accept
+7- should reject
+13- should accept
+15-?
+19-flicker?
+20-bad star count
+21-flicker should reject
+23-should reject
+24-should reject
+32-should reject
+43-?
+58-?
+65-should reject
+66-should accept
+67-should reject
+88-bad star count
+90-should reject
+92-should reject
+96-should reject
+105-?
+106-bad star count
+107-should reject
+137-should reject
+143-should reject
+156-should reject
+162- should accept
+169-should reject
