@@ -4,6 +4,22 @@ import pywt
 import imageio
 import os
 
+# Compresses an image using wavelet-based transformation.
+# This method targets high-frequency components for compression
+# while preserving low-frequency (perceptually important) parts.
+#
+# Parameters:
+# - input_path: path to the input image file (e.g., PNG or JPEG).
+# - output_path: where to save the compressed image (e.g., WebP).
+# - wavelet: type of wavelet to use (default: 'haar'; others like 'db1', 'coif1' are supported).
+# - level: number of decomposition levels for the wavelet transform.
+# - quant_level: quantization strength; higher = more compression/loss.
+#
+# Process:
+# 1. Convert image to YUV (better for perceptual compression).
+# 2. Apply wavelet transform to each channel.
+# 3. Quantize high-frequency details to reduce file size.
+# 4. Reconstruct and save the compressed result.
 def compress_image_wavelet(input_path, output_path, wavelet='haar', level=2, quant_level=30):
     # Load color image (BGR)
     img = cv2.imread(input_path)
@@ -43,8 +59,8 @@ def compress_image_wavelet(input_path, output_path, wavelet='haar', level=2, qua
 
     # Save as high-efficiency format (WebP or PNG)
     imageio.imwrite(output_path, compressed_rgb, format='WEBP', quality=85)
-    print(f"✅ Wavelet-compressed image saved to {output_path}")
+    print(f"Wavelet-compressed image saved to {output_path}")
 
-# === EXAMPLE USAGE ===
-if __name__ == "__main__":
-    compress_image_wavelet("Images/good5.png", "wavelet_compressed.webp")
+
+#if __name__ == "__main__":
+#    compress_image_wavelet("Images/good5.png", "wavelet_compressed.webp")

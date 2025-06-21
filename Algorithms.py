@@ -5,9 +5,19 @@ import re
 from earth import earth
 from star_finder import star_finder
 
+# Checks if a given filename has a valid image extension.
+# Returns True for files ending in .jpg, .jpeg, .png, or .bmp (case-insensitive).
 def is_image_file(filename):
     return filename.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp'))
 
+# Evaluates image quality based on sharpness and noise level.
+# Arguments:
+# - image_gray: the image in grayscale format (2D numpy array).
+# - sharp_thresh: minimum required sharpness (Laplacian variance).
+# - noise_thresh: maximum allowed noise (residual std deviation).
+# Returns:
+# - (bool) whether the image passed quality checks.
+# - (list of strings) descriptive tags of sharpness and noise assessment.
 def check_quality(image_gray, sharp_thresh=400, noise_thresh=15):
     laplacian = cv2.Laplacian(image_gray, cv2.CV_64F)
     sharpness = laplacian.var()
@@ -34,6 +44,13 @@ def check_quality(image_gray, sharp_thresh=400, noise_thresh=15):
 
     return passed, tags
 
+# Attempts to detect the presence of a horizon (strong horizontal line) in the image.
+# Uses both Sobel operator and Hough Transform for robustness.
+# Arguments:
+# - image_gray: grayscale image.
+# Returns:
+# - (bool) whether a horizon was detected.
+# - (string) description of the detection result.
 def detect_horizon(image_gray):
     edges = cv2.Canny(image_gray, 50, 150)
     lines = cv2.HoughLines(edges, 1, np.pi / 180, 100)
@@ -51,6 +68,15 @@ def detect_horizon(image_gray):
         return True, "Horizon: Weak horizontal line (Hough only)"
     return False, "Horizon: No strong horizontal edge"
 
+# Detects stars in the image using a masked sky region (earth filtering).
+# Arguments:
+# - image_path: path to the image file.
+# - dim: resize dimensions for processing (width, height).
+# - min_stars: minimum number of stars required to consider detection valid.
+# - sensitivity: star detection sensitivity parameter.
+# Returns:
+# - (bool) whether enough stars were detected.
+# - (list of strings) descriptive tags of star count and potential issues.
 def detect_stars_with_sky_mask(image_path, dim=(1280, 720), min_stars=40, sensitivity=60):
     try:
         e = earth(image_path, dim=dim)
@@ -69,6 +95,14 @@ def detect_stars_with_sky_mask(image_path, dim=(1280, 720), min_stars=40, sensit
     except Exception as ex:
         return False, [f"Star detection error: {str(ex)}"]
 
+# Detects overexposure glitches by checking if a large portion of the image is too bright.
+# Arguments:
+# - image_gray: grayscale image.
+# - bright_pixel_threshold: pixel intensity considered "too bright".
+# - max_allowed_ratio: percentage of bright pixels allowed before failing.
+# Returns:
+# - (bool) whether the glitch check passed.
+# - (string) message describing the glitch analysis.
 def detect_glitch(image_gray, bright_pixel_threshold=240, max_allowed_ratio=0.08):
     bright_pixels = np.sum(image_gray > bright_pixel_threshold)
     total_pixels = image_gray.shape[0] * image_gray.shape[1]
@@ -77,6 +111,14 @@ def detect_glitch(image_gray, bright_pixel_threshold=240, max_allowed_ratio=0.08
         return False, f"Glitch: {round(ratio*100, 2)}% pixels overexposed"
     return True, "Glitch: No overexposure detected"
 
+# Detects flickering artifacts by analyzing brightness consistency across horizontal rows.
+# Arguments:
+# - image_gray: grayscale image.
+# - flicker_threshold: not directly used (can be removed or added later).
+# - row_brightness_variation: threshold for row-wise brightness deviation.
+# Returns:
+# - (bool) whether flicker is within acceptable levels.
+# - (string) summary of flicker analysis with stats and conclusion.
 def detect_flicker(image_gray, flicker_threshold=12, row_brightness_variation=10):
     diffs = np.abs(np.diff(image_gray.astype(np.int16), axis=0))
     row_std = np.std(np.mean(diffs, axis=1))
@@ -94,10 +136,19 @@ def detect_flicker(image_gray, flicker_threshold=12, row_brightness_variation=10
 
     return passed, " | ".join(tags)
 
+# Sort helper: splits filenames naturally (e.g., "image2.jpg" < "image10.jpg").
+# Used to ensure images are sorted in human-readable order.
 def natural_key(string):
     # Split string into list of strings and integers: "10.jpg" -> ["", 10, ".jpg"]
     return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', string)]
 
+# Runs full Phase 1 analysis on all images in the specified folder.
+# Performs quality, star count, horizon, glitch, and flicker checks.
+# Saves and prints results per image with pass/fail status and diagnostic tags.
+# Arguments:
+# - folder_path: folder containing images to process.
+# Returns:
+# - list of dictionaries with results for each image.
 def run_phase1_on_folder(folder_path='stars'):
     results = []
 
@@ -146,7 +197,7 @@ def run_phase1_on_folder(folder_path='stars'):
             passed_all = False
 
         # Output
-        status = "✅ PASSED" if passed_all else "❌ REJECTED"
+        status = "PASSED" if passed_all else "REJECTED"
         print(f"\n{filename}: {status}")
         for t in tags:
             print(f"  - {t}")
@@ -159,6 +210,12 @@ def run_phase1_on_folder(folder_path='stars'):
 
     return results
 
+# Single-image version of Phase 1 analysis.
+# Takes a single image path, applies all filters, and returns a formatted summary.
+# Arguments:
+# - image_path: full path to the image file.
+# Returns:
+# - string summary including pass/fail and diagnostic tags.
 def analyze_image(image_path):
     image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
     if image is None:
@@ -197,7 +254,7 @@ def analyze_image(image_path):
     if not f_ok:
         passed_all = False
 
-    status = "✅ PASSED" if passed_all else "❌ REJECTED"
+    status = "PASSED" if passed_all else "REJECTED"
 
     result = f"{os.path.basename(image_path)}: {status}\n"
     result += "\n".join(f"  - {t}" for t in tags)
