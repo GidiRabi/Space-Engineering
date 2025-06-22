@@ -110,8 +110,12 @@ class earth:
         self.fill_earth()
         self.mask = dilate(self.mask, np.ones((10, 10), np.uint8), iterations=1)
 
+        # Erode the sky mask to avoid earth-edge contamination
+        sky_mask = bitwise_not(self.mask)
+        sky_mask = cv2.erode(sky_mask, np.ones((7, 7), np.uint8), iterations=1)
+
         clear_earth = bitwise_and(self.image, self.image, mask=self.mask)
-        clear_sky = bitwise_and(self.image, self.image, mask=bitwise_not(self.mask))
+        clear_sky = bitwise_and(self.image, self.image, mask=sky_mask)
 
         return clear_sky, clear_earth, self.mask
 

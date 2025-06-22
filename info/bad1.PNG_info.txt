@@ -1,0 +1,11 @@
+bad1.PNG: REJECTED (Score: 42/100)
+REJECTION REASONS: Image quality (blurry or noisy)
+  - Image sharpness: 33.5
+  - → Blurry
+  - Noise level: 1.4
+  - → Clean
+  - Star count: 4
+  - → Sufficient stars
+  - Horizon: No strong horizontal edge
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.18 | Flicker – brightness row variation: 2.79

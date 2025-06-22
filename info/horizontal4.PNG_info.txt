@@ -1,0 +1,10 @@
+horizontal4.PNG: REJECTED (Score: 38/100)
+REJECTION REASONS: Image quality (blurry or noisy); Insufficient stars detected; Severe flicker detected
+  - Image sharpness: 232.3
+  - → Blurry
+  - Noise level: 3.5
+  - → Clean
+  - Star detection error: 'earth' object has no attribute 'get_mask'
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 3.6 | Flicker – brightness row variation: 35.7 | → Moderate flicker | → Severe flicker

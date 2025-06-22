@@ -77,12 +77,15 @@ def detect_horizon(image_gray):
 # Returns:
 # - (bool) whether enough stars were detected.
 # - (list of strings) descriptive tags of star count and potential issues.
-def detect_stars_with_sky_mask(image_path, dim=(1280, 720), min_stars=40, sensitivity=60):
+def detect_stars_with_sky_mask(image_path, dim=(1280, 720), min_stars=3, sensitivity=60):
     try:
         e = earth(image_path, dim=dim)
         sky_gray = cv2.cvtColor(e.clear_sky, cv2.COLOR_BGR2GRAY)
-        star_analysis = star_finder(image_path, gray_image=sky_gray, sensitivity=sensitivity, dim=dim)
-        count = len(star_analysis.stars)
+        star_analysis = star_finder(image_path, gray_image=sky_gray, dim=dim)
+        # Filter out stars close to the horizon (bottom 20% of image)
+        h = sky_gray.shape[0]
+        filtered_stars = [s for s in star_analysis.stars if s[1][1] < int(h * 0.8)]
+        count = len(filtered_stars)
         tags = [f"Star count: {count}"]
         if count >= min_stars:
             tags.append("→ Sufficient stars")
@@ -223,40 +226,77 @@ def analyze_image(image_path):
 
     passed_all = True
     tags = []
+    reasons = []
+    score = 100  # Start with a perfect score
 
     # Quality
     q_ok, q_tags = check_quality(image)
     tags.extend(q_tags)
-    if not q_ok:
+    sharpness = float(q_tags[0].split(":")[1])  # Extract sharpness value
+    noise = float(q_tags[2].split(":")[1])      # Extract noise value
+
+    # Penalize score for sharpness
+    if sharpness < 400:
+        score -= min(30, (400 - sharpness) * 0.1)
         passed_all = False
+        reasons.append("Image quality (blurry or noisy)")
+    # Penalize score for noise
+    if noise > 15:
+        score -= min(20, (noise - 15) * 1.5)
+        passed_all = False
+        if "Image quality (blurry or noisy)" not in reasons:
+            reasons.append("Image quality (blurry or noisy)")
 
     # Stars
     s_ok, s_tags = detect_stars_with_sky_mask(image_path)
     tags.extend(s_tags)
+    star_count = 0
+    for t in s_tags:
+        if t.startswith("Star count:"):
+            star_count = int(t.split(":")[1].strip())
     if not s_ok:
+        score -= 30
         passed_all = False
+        reasons.append("Insufficient stars detected")
+    elif star_count < 60:
+        score -= (60 - star_count) * 0.5  # Small penalty for low but not failing
 
     # Horizon
     h_ok, h_tag = detect_horizon(image)
     tags.append(h_tag)
     if not h_ok and not s_ok:
         tags.append("→ No sky detected")
+        score -= 10
+        reasons.append("No sky detected")
 
     # Glitch
     g_ok, g_tag = detect_glitch(image)
     tags.append(g_tag)
     if not g_ok:
+        score -= 15
         passed_all = False
+        reasons.append("Overexposure glitch")
 
     # Flicker
     f_ok, f_tag = detect_flicker(image)
     tags.append(f_tag)
     if not f_ok:
+        score -= 15
         passed_all = False
+        reasons.append("Severe flicker detected")
+
+    # Clamp score to [0, 100]
+    score = max(0, min(100, int(score)))
 
     status = "PASSED" if passed_all else "REJECTED"
 
-    result = f"{os.path.basename(image_path)}: {status}\n"
+    # Add rejection reasons summary at the top if rejected
+    if not passed_all and reasons:
+        reason_msg = "REJECTION REASONS: " + "; ".join(reasons)
+        result = f"{os.path.basename(image_path)}: {status} (Score: {score}/100)\n{reason_msg}\n"
+    else:
+        result = f"{os.path.basename(image_path)}: {status} (Score: {score}/100)\n"
+
     result += "\n".join(f"  - {t}" for t in tags)
     return result
 

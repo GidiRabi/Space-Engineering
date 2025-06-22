@@ -1,0 +1,11 @@
+normal1.PNG: REJECTED (Score: 60/100)
+REJECTION REASONS: Image quality (blurry or noisy)
+  - Image sharpness: 160.6
+  - → Blurry
+  - Noise level: 2.5
+  - → Clean
+  - Star count: 29
+  - → Sufficient stars
+  - Horizon: Weak horizontal line (Sobel only)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 0.57 | Flicker – brightness row variation: 11.01

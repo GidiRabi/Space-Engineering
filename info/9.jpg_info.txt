@@ -1,0 +1,11 @@
+9.jpg: REJECTED (Score: 81/100)
+REJECTION REASONS: Image quality (blurry or noisy)
+  - Image sharpness: 14389.4
+  - → Sharp
+  - Noise level: 27.6
+  - → Noisy
+  - Star count: 254
+  - → Sufficient stars
+  - Horizon: Strong horizontal line detected (Sobel & Hough)
+  - Glitch: No overexposure detected
+  - Flicker – row diff std: 10.25 | Flicker – brightness row variation: 18.99 | → Moderate flicker

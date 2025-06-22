@@ -18,10 +18,15 @@ from cv2 import (
 # - dim: optional resize dimensions for input image.
 # - draw: if True, generates an image with star annotations.
 class star_finder:
-    def __init__(self, path_or_image, gray_image=None, sensitivity=100, N_stars=None, dim=None, draw=False):
+    def __init__(self, path_or_image, gray_image=None, sensitivity=None, N_stars=None, dim=None, draw=False):
         self.image = self._get_image(path_or_image, dim)
         self.gray_image = gray_image if isinstance(gray_image, np.ndarray) else cvtColor(self.image, COLOR_BGR2GRAY)
-        self.sensitivity = sensitivity
+        if sensitivity is None:
+            avg_brightness = np.mean(self.gray_image)
+            # Map average brightness [0,255] to sensitivity [70,120]
+            self.sensitivity = int(70 + (avg_brightness / 255) * 50)
+        else:
+            self.sensitivity = sensitivity
         self.mask = self.get_threshold()
         self.stars = self.find_stars()
         self.N_stars = min(N_stars or len(self.stars), len(self.stars)) if self.stars else 0
@@ -62,7 +67,7 @@ class star_finder:
         stars = []
         for cnt in contours:
             area = cv2.contourArea(cnt)
-            if area < 5 or area > 150:
+            if area < 2 or area > 180:
                 continue
             (x, y), r = cv2.minEnclosingCircle(cnt)
 
@@ -70,7 +75,7 @@ class star_finder:
             center = (x, y)
             star_crop = self.extract_star(y, x, r)
             brightness = np.amax(star_crop)
-            if brightness < self.sensitivity:
+            if brightness < self.sensitivity - 8:
                 continue
             stars.append((star_crop, center, r, brightness))
         stars.sort(key=lambda s: s[3], reverse=True)

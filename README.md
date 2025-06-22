@@ -11,6 +11,23 @@ A full pipeline for automatic **satellite image classification** and **visual co
   - Glitch detection via overexposure
   - Flicker detection via row brightness variation
 
+  ## 📈 Image Scoring System
+
+  Each image receives a score out of 100 based on quality and content checks:
+
+  - **Starts at 100**
+  - Penalties are subtracted for:
+    - Low sharpness (up to -30)
+    - High noise (up to -20)
+    - Too few stars (-30)
+    - Star count below 60 (small penalty per missing star)
+    - No sky detected (-10)
+    - Overexposure glitch (-15)
+    - Severe flicker (-15)
+  - Final score is clamped between 0 and 100.
+
+  This score gives a nuanced view of image quality beyond simple pass/fail.
+
 - **Sky & Earth Segmentation**:
   - Masks Earth vs. sky regions using adaptive thresholding
   - Ignores false stars in Earth regions
